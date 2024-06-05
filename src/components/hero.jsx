@@ -1,10 +1,10 @@
 import HeroPic from "../assets/Rectangle 1.png";
 
 
-const hero = () => {
+export default function Hero() {
   return (
     <section className="flex  items-center p-10 space-x-10 
-    lg:flex-row ssm:flex-col ssm:space-y-10">
+    lg:flex-row ssm:flex-col ssm:space-y-10 mb-10">
         <div className="lg:w-1/2 ssm:w-fit">
           <p className="text-5xl mb-4">👋</p>
           <p className="text-2xl mb-5">Hi, I’m Astri Nurazizah </p>
@@ -24,5 +24,3 @@ const hero = () => {
     </section>
   )
 }
-
-export default hero
