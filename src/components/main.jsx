@@ -8,7 +8,7 @@ import Contact from "./contact"
 
 const main = () => {
   return (
-   <div className="">
+   <div className="font-syne">
         <Navbar/>
         <Hero/>
         <Project/>
