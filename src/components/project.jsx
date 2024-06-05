@@ -18,7 +18,7 @@ export default function project() {
 
         <div className='gap-1 p-10'>
         <div className="bg-neutral-100 flex items-center space-x-10 
-    lg:flex-row ssm:flex-col ssm:space-y-10 mb-12">
+    lg:flex-row ssm:flex-col ssm:space-y-10 mb-10">
             <div className="w-1/2 items-center ssm:w-fit">
                 <img src={Project1img} alt="" width={600} height={200}
                     className=""
@@ -34,7 +34,7 @@ export default function project() {
             </div>
         </div>
         <div className="bg-neutral-100 flex items-center space-x-10 
-    lg:flex-row ssm:flex-col ssm:space-y-10 mb-12">
+    lg:flex-row ssm:flex-col ssm:space-y-10 mb-10">
             <div className="w-1/2 items-center ssm:w-fit">
                 <img src={Project2img} alt="" width={600} height={200}
                     className=""
@@ -50,7 +50,7 @@ export default function project() {
             </div>
         </div>
         <div className="bg-neutral-100 flex items-center space-x-10 
-    lg:flex-row ssm:flex-col ssm:space-y-10 mb-12">
+    lg:flex-row ssm:flex-col ssm:space-y-10 mb-10">
             <div className="w-1/2 items-center ssm:w-fit">
                 <img src={Project3img} alt="" width={600} height={200}
                     className=""
@@ -66,7 +66,7 @@ export default function project() {
             </div>
         </div>
         <div className="bg-neutral-100 flex items-center space-x-10 
-    lg:flex-row ssm:flex-col ssm:space-y-10 mb-12">
+    lg:flex-row ssm:flex-col ssm:space-y-10 mb-10">
             <div className="w-1/2 items-center ssm:w-fit">
                 <img src={Project4img} alt="" width={600} height={200}
                     className=""
