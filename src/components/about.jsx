@@ -1,4 +1,6 @@
 import Aboutimg from '../assets/Rectangle 2.png';
+import AboutProfilimg from '../assets/girl.webp';
+import { BsDownload } from "react-icons/bs";
 import Blur1img from '../assets/blurb-001.svg';
 import Blur2img from '../assets/blurb-002.svg';
 import Blur3img from '../assets/blurb-003.svg';
@@ -11,14 +13,14 @@ export default function about() {
         lg:flex-row ssm:flex-col">
             <div className="lg:w-1/2 ssm:w-fit">
             <h1 className="text-5xl mb-20">About me</h1>
-            <img src={Aboutimg} alt="" width={50} height={50}
-                    className="w-12 h-12 rounded-full object-cover mb-10"
+            <img src={AboutProfilimg} alt="" width={50} height={50}
+                    className="w-20 h-20 rounded-full object-cover mb-10"
                 />
             <p className='mb-4'>
             Hi, thanks for stopping by. I’m Astri Nurazizah, a UI/UX designer. I love to connect with others and share what I am learning. Working in the software industry for the past 8 years.
             </p>
             <p className='mb-4'>Expert in creating design mockups, wireframes, prototypes, and illustrations, and setting up visual design guidelines. </p>
-            <button className='bg-white border border-black text-black px-4 py-3 rounded mb-8'>Download CV</button>
+            <button className='flex justify-end items-center border border-black text-black px-6 py-3 mb-8'>Download CV<BsDownload /></button>
             </div>
             <div className="w-1/3 items-center ssm:w-fit">
                 <h1 className="text-5xl mb-10">Aligning business goals with user needs.</h1>
