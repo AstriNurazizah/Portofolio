@@ -6,7 +6,7 @@ import { FaDribbble } from "react-icons/fa";
 export default function Footer() {
     return (
 
-      <div className='bg-neutral-100 justify-center'>
+      <div className='bg-neutral-100 justify-center' id='contact'>
         <div className="flex items-center p-10 space-x-10 lg:flex-row ssm:flex-col ssm:space-y-10 justify-center">
             <div className="lg:w-1/2 ssm:w-fit flex ">
                 <div>

@@ -7,7 +7,7 @@ import Project4img from '../assets/project4.jpg';
 export default function project() {
   return (
     <>
-        <div className="flex p-10 space-x-10 lg:flex-row ssm:flex-col ssm:space-y-10 items-center w-full">
+        <div className="flex p-10 space-x-10 lg:flex-row ssm:flex-col ssm:space-y-10 items-center w-full" id="project">
             <div className="lg:w-1/2 w-full flex lg:justify-start justify-center lg:items-center">
             <h1 className="text-5xl">Featured Projects</h1>
             </div>
