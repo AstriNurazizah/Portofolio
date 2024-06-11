@@ -1,4 +1,6 @@
 import { MdArrowOutward } from "react-icons/md";
+import { GoArrowRight } from "react-icons/go";
+import { Link } from 'react-router-dom';
 import Project1img from '../assets/project1.jpg';
 import Project2img from '../assets/project2.jpg';
 import Project3img from '../assets/project3.jpg';
@@ -12,7 +14,12 @@ export default function project() {
             <h1 className="text-5xl">Featured Projects</h1>
             </div>
             <div className="lg:w-1/2 ssm:w-fit flex justify-end">
-                <button className='flex items-center border border-black text-black px-8 py-3 '>View All<MdArrowOutward/></button>
+                <button className='flex items-center border border-black text-black px-8 py-3 '>
+                <Link to="/projectall" className="flex items-center">
+                    View All
+                    <MdArrowOutward/>
+                </Link>
+                </button>
             </div>
         </div>
 
@@ -30,7 +37,7 @@ export default function project() {
             <p>
             In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
             </p>
-            <a href='#'>Project Details</a>
+            <a href='#' className="flex items-center ">Project Details <GoArrowRight /></a>
             </div>
         </div>
         <div className="bg-neutral-100 flex items-center space-x-10 
@@ -46,7 +53,7 @@ export default function project() {
             <p>
             In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
             </p>
-            <a href='#'>Project Details</a>
+            <a href='#' className="flex items-center ">Project Details <GoArrowRight /></a>
             </div>
         </div>
         <div className="bg-neutral-100 flex items-center space-x-10 
@@ -62,7 +69,7 @@ export default function project() {
             <p>
             In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
             </p>
-            <a href='#'>Project Details</a>
+            <a href='#' className="flex items-center ">Project Details <GoArrowRight /></a>
             </div>
         </div>
         <div className="bg-neutral-100 flex items-center space-x-10 
@@ -78,7 +85,7 @@ export default function project() {
             <p>
             In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
             </p>
-            <a href='#'>Project Details</a>
+            <a href='#' className="flex items-center ">Project Details <GoArrowRight /></a>
             </div>
         </div>
         </div>

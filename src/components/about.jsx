@@ -33,8 +33,8 @@ export default function about() {
             </div>
         </div>
 
-        <div className='grid m-10'>
-            <h1 className='text-3xl mt-10'>My Expertise</h1>
+        <div className='grid m-8'>
+            <h1 className='text-3xl '>My Expertise</h1>
         </div>
         <div>
             <div className='grid grid-cols-3 gap-4 p-5'>
