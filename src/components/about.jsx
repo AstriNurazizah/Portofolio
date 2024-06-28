@@ -53,7 +53,11 @@ export default function about() {
                     <p className='uppercase tracking-wide text-sm
                      to-slate-300 font-semibold'>
                      User Interface Design</p>
-                     <p className='mt-2 text-slate-400'>Crafting intuitive digital experiences through visual aesthetics and interaction design.</p>
+                     <p className='mt-2 text-slate-400'> Crafting intuitive digital experiences through visual aesthetics 
+                     and interaction design. I focus on creating designs that not only look great but also enhance usability and user satisfaction.</p>
+                     <p className='mt-4 text-slate-400'>
+                        Technologies: HTML, CSS, JavaScript, Bootstrap
+                    </p>
                     </div>
                 </div>
                 </div>
@@ -67,7 +71,11 @@ export default function about() {
                     <p className='uppercase tracking-wide text-sm
                      to-slate-300 font-semibold'>
                      User Experience Design</p>
-                     <p className='mt-2 text-slate-400'>Empathetically designing seamless journeys that delight users and fulfill their needs.</p>
+                     <p className='mt-2 text-slate-400'>Empathetically designing seamless journeys that delight users and fulfill their needs. 
+                     I believe in creating user-centric designs by deeply understanding user behaviors and motivations.</p>
+                     <p className='mt-4 text-slate-400'>
+                        Technologies: User Research, UX Prototyping
+                    </p>
                     </div>
                 </div>
                 </div>
@@ -81,7 +89,11 @@ export default function about() {
                     <p className='uppercase tracking-wide text-sm
                      to-slate-300 font-semibold'>
                      Frontend Development</p>
-                     <p className='mt-2 text-slate-400'>Transforming designs into dynamic, responsive websites with code & creativity.</p>
+                     <p className='mt-2 text-slate-400'>Transforming designs into dynamic, responsive websites with code & creativity. 
+                     I specialize in building user interfaces that are not only visually appealing but also performant and accessible.</p>
+                     <p className='mt-4 text-slate-400'>
+                        Technologies: React, JavaScript, Tailwind CSS
+                    </p>
                     </div>
                 </div>
                 </div>

@@ -1,4 +1,5 @@
 import { MdArrowOutward } from "react-icons/md";
+import { Link } from 'react-router-dom';
 import Project1img from '../assets/project1.jpg';
 import Project2img from '../assets/project2.jpg';
 
@@ -10,7 +11,12 @@ export default function Blog() {
             <h1 className="text-5xl">From my blog</h1>
             </div>
             <div className="lg:w-1/2 ssm:w-fit flex justify-end">
-                <button className='flex items-center border border-black text-black px-8 py-3 '>View All<MdArrowOutward/></button>
+                <button className='flex items-center border border-black text-black px-8 py-3 '>
+                <Link to="/blogall" className="flex items-center">
+                    View All
+                    <MdArrowOutward/>
+                </Link>
+                </button>
             </div>
         </div>
 

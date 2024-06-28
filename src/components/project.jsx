@@ -1,12 +1,13 @@
 import { MdArrowOutward } from "react-icons/md";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Project1img from '../assets/project1.jpg';
 import Project2img from '../assets/project2.jpg';
 import Project3img from '../assets/project3.jpg';
 import Project4img from '../assets/project4.jpg';
 
-export default function project() {
+const Project = ({ projectId }) => {
   return (
     <>
         <div className="flex p-10 space-x-10 lg:flex-row ssm:flex-col ssm:space-y-10 items-center w-full" id="project">
@@ -37,7 +38,11 @@ export default function project() {
             <p>
             In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
             </p>
-            <a href='#' className="flex items-center ">Project Details <GoArrowRight /></a>
+            <div className="">
+                <Link to={`/project/${projectId}`} className="flex items-center">
+                Project Details <GoArrowRight />
+                </Link>
+            </div>
             </div>
         </div>
         <div className="bg-neutral-100 flex items-center space-x-10 
@@ -53,7 +58,11 @@ export default function project() {
             <p>
             In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
             </p>
-            <a href='#' className="flex items-center ">Project Details <GoArrowRight /></a>
+            <div className="">
+                <Link to={`/project/${projectId}`} className="flex items-center">
+                Project Details <GoArrowRight />
+                </Link>
+            </div>
             </div>
         </div>
         <div className="bg-neutral-100 flex items-center space-x-10 
@@ -69,7 +78,11 @@ export default function project() {
             <p>
             In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
             </p>
-            <a href='#' className="flex items-center ">Project Details <GoArrowRight /></a>
+            <div className="">
+                <Link to={`/project/${projectId}`} className="flex items-center">
+                Project Details <GoArrowRight />
+                </Link>
+            </div>
             </div>
         </div>
         <div className="bg-neutral-100 flex items-center space-x-10 
@@ -85,11 +98,21 @@ export default function project() {
             <p>
             In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
             </p>
-            <a href='#' className="flex items-center ">Project Details <GoArrowRight /></a>
+            <div className="">
+                <Link to={`/project/${projectId}`} className="flex items-center">
+                Project Details <GoArrowRight />
+                </Link>
+            </div>
             </div>
         </div>
         </div>
     </>
   )
 }
+
+Project.propTypes = {
+    projectId: PropTypes.string.isRequired, 
+};
+
+export default Project;
 
