@@ -1,13 +1,9 @@
 import { MdArrowOutward } from "react-icons/md";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import Project1img from '../assets/project1.jpg';
-import Project2img from '../assets/project2.jpg';
-import Project3img from '../assets/project3.jpg';
-import Project4img from '../assets/project4.jpg';
+import { projectdata } from './projectdata';
 
-const Project = ({ projectId }) => {
+const Project = () => {
   return (
     <>
         <div className="flex p-10 space-x-10 lg:flex-row ssm:flex-col ssm:space-y-10 items-center w-full" id="project">
@@ -25,94 +21,30 @@ const Project = ({ projectId }) => {
         </div>
 
         <div className='gap-1 p-10'>
-        <div className="bg-neutral-100 flex items-center space-x-10 
-    lg:flex-row ssm:flex-col ssm:space-y-10 mb-10">
+        {projectdata.slice(0, 3).map((projectdata) => (
+          <div key={projectdata.id} className="bg-neutral-100 flex items-center space-x-10 lg:flex-row 
+          ssm:flex-col ssm:space-y-10 mb-10">
             <div className="w-1/2 items-center ssm:w-fit">
-                <img src={Project1img} alt="" width={600} height={200}
-                    className=""
-                />
+              <img src={projectdata.img} alt="" width={600} height={200} className="" />
             </div>
             <div className="lg:w-1/2 ssm:w-fit">
-            <h1 className="text-4xl">IKEA – Designing dashboard for supply chain management</h1>
-            <hr/>
-            <p>
-            In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
-            </p>
-            <div className="">
-                <Link to={`/project/${projectId}`} className="flex items-center">
-                Project Details <GoArrowRight />
+              <h1 className="text-4xl mb-6 font-semibold">{projectdata.nama}</h1>
+              <hr/>
+              <p className="mb-2">{projectdata.teknologi.join(' ')}</p>
+              <p className="truncate w-100 mb-2">{projectdata.deskripsi}</p>
+              <p className="mb-2">{projectdata.demolink}</p>
+              <div className="mb-2">
+                <Link to={`/project/${projectdata.id}`} className="flex items-center">
+                  Project Details <GoArrowRight />
                 </Link>
+              </div>
             </div>
-            </div>
-        </div>
-        <div className="bg-neutral-100 flex items-center space-x-10 
-    lg:flex-row ssm:flex-col ssm:space-y-10 mb-10">
-            <div className="w-1/2 items-center ssm:w-fit">
-                <img src={Project2img} alt="" width={600} height={200}
-                    className=""
-                />
-            </div>
-            <div className="lg:w-1/2 ssm:w-fit">
-            <h1 className="text-4xl">IKEA – Designing dashboard for supply chain management</h1>
-            <hr/>
-            <p>
-            In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
-            </p>
-            <div className="">
-                <Link to={`/project/${projectId}`} className="flex items-center">
-                Project Details <GoArrowRight />
-                </Link>
-            </div>
-            </div>
-        </div>
-        <div className="bg-neutral-100 flex items-center space-x-10 
-    lg:flex-row ssm:flex-col ssm:space-y-10 mb-10">
-            <div className="w-1/2 items-center ssm:w-fit">
-                <img src={Project3img} alt="" width={600} height={200}
-                    className=""
-                />
-            </div>
-            <div className="lg:w-1/2 ssm:w-fit">
-            <h1 className="text-4xl">IKEA – Designing dashboard for supply chain management</h1>
-            <hr/>
-            <p>
-            In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
-            </p>
-            <div className="">
-                <Link to={`/project/${projectId}`} className="flex items-center">
-                Project Details <GoArrowRight />
-                </Link>
-            </div>
-            </div>
-        </div>
-        <div className="bg-neutral-100 flex items-center space-x-10 
-    lg:flex-row ssm:flex-col ssm:space-y-10 mb-10">
-            <div className="w-1/2 items-center ssm:w-fit">
-                <img src={Project4img} alt="" width={600} height={200}
-                    className=""
-                />
-            </div>
-            <div className="lg:w-1/2 ssm:w-fit">
-            <h1 className="text-4xl">IKEA – Designing dashboard for supply chain management</h1>
-            <hr/>
-            <p>
-            In a world driven by constant change and innovation, the concept of lifelong learning has become more critical than ever. As someone committed…
-            </p>
-            <div className="">
-                <Link to={`/project/${projectId}`} className="flex items-center">
-                Project Details <GoArrowRight />
-                </Link>
-            </div>
-            </div>
-        </div>
-        </div>
+          </div>
+        ))}
+      </div>
     </>
   )
 }
-
-Project.propTypes = {
-    projectId: PropTypes.string.isRequired, 
-};
 
 export default Project;
 

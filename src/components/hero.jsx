@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="lg:w-1/2 ssm:w-fit">
           <p className="text-5xl mb-4">👋</p>
           <p className="text-2xl mb-5">Hi, I’m Astri Nurazizah </p>
-          <h1 className="text-5xl">Creating with Code and Design</h1>
+          <h1 className="text-5xl mb-4">Creating with Code and Design</h1>
           {/* Berkarya dengan Kode dan Desain */}
           <hr/>
           <p>

@@ -11,11 +11,12 @@ export default function about() {
         <div className='bg-neutral-100 ' id='about' >
             <div className=" flex justify-around p-10 mt-4 space-x-10 
         lg:flex-row ssm:flex-col">
-            <div className="lg:w-1/2 ssm:w-fit">
+            <div className="lg:w-1/2 ssm:w-auto">
             <h1 className="text-5xl mb-20">About me</h1>
             <img src={AboutProfilimg} alt="" width={50} height={50}
                     className="w-20 h-20 rounded-full object-cover mb-10"
                 />
+            <div className='text-justify'>
             <p className='mb-4'>
             Hi, I’m Astri Nurazizah, a recent graduate in Informatics Engineering with a strong passion for graphic design and programming. 
             I am enthusiastic about blending creativity and logic to deliver innovative and effective digital solutions.</p>
@@ -23,6 +24,7 @@ export default function about() {
             These experiences have honed my ability to create products that not only look great but also function seamlessly.</p>
             <p className='mb-4'>I believe that good design is about how something works, not just how it looks. Therefore, I strive to continuously 
             learn and refine my skills in both fields to become a proficient professional in the technology industry.</p>
+            </div>
             <button className='flex justify-end items-center border border-black text-black px-6 py-3 mb-8'>
                 <a href='./assets/CV.pdf' download>
                     Download CV
@@ -30,7 +32,7 @@ export default function about() {
                 <BsDownload />
             </button>
             </div>
-            <div className="w-1/3 items-center ssm:w-fit">
+           <div className="w-1/3 items-center ssm:w-fit">
                 <h1 className="text-5xl mb-10 text-right">Aligning career aspirations with industry demands.</h1>
                 <img src={Aboutimg} alt="" width={700} height={320}
                     className="rounded-full ml-auto"
@@ -42,7 +44,7 @@ export default function about() {
             <h1 className='text-3xl '>My Expertise</h1>
         </div>
         <div>
-            <div className='grid grid-cols-3 gap-4 p-5'>
+            <div className='grid grid-cols-3 gap-4 p-5 text-justify'>
                 <div className='max-w-md mx-auto bg-white rounded-1 
                 shadow-md oberflow-hidden md-max-w-2xl hover:animate-pulse'>
                 <div className='md:flex'>
