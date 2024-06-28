@@ -30,7 +30,7 @@ const Project = () => {
             <div className="lg:w-1/2 ssm:w-fit">
               <h1 className="text-4xl mb-6 font-semibold">{projectdata.nama}</h1>
               <hr/>
-              <p className="mb-2">{projectdata.teknologi.join(' ')}</p>
+              <p className="mb-2">{projectdata.teknologi.join(', ')}</p>
               <p className="truncate w-100 mb-2">{projectdata.deskripsi}</p>
               <p className="mb-2">{projectdata.demolink}</p>
               <div className="mb-2">
