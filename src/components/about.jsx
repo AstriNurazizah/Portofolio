@@ -23,7 +23,12 @@ export default function about() {
             These experiences have honed my ability to create products that not only look great but also function seamlessly.</p>
             <p className='mb-4'>I believe that good design is about how something works, not just how it looks. Therefore, I strive to continuously 
             learn and refine my skills in both fields to become a proficient professional in the technology industry.</p>
-            <button className='flex justify-end items-center border border-black text-black px-6 py-3 mb-8'>Download CV<BsDownload /></button>
+            <button className='flex justify-end items-center border border-black text-black px-6 py-3 mb-8'>
+                <a href='./assets/CV.pdf' download>
+                    Download CV
+                </a>
+                <BsDownload />
+            </button>
             </div>
             <div className="w-1/3 items-center ssm:w-fit">
                 <h1 className="text-5xl mb-10 text-right">Aligning career aspirations with industry demands.</h1>
@@ -45,9 +50,9 @@ export default function about() {
                     <div>
                     <img src={Blur1img} alt='' />
                     </div>
-                    <a href='#' className='uppercase tracking-wide text-sm
+                    <p className='uppercase tracking-wide text-sm
                      to-slate-300 font-semibold'>
-                     User Interface Design</a>
+                     User Interface Design</p>
                      <p className='mt-2 text-slate-400'>Crafting intuitive digital experiences through visual aesthetics and interaction design.</p>
                     </div>
                 </div>
@@ -59,9 +64,9 @@ export default function about() {
                     <div>
                     <img src={Blur2img} alt='' />
                     </div>
-                    <a href='#' className='uppercase tracking-wide text-sm
+                    <p className='uppercase tracking-wide text-sm
                      to-slate-300 font-semibold'>
-                     User Experience Design</a>
+                     User Experience Design</p>
                      <p className='mt-2 text-slate-400'>Empathetically designing seamless journeys that delight users and fulfill their needs.</p>
                     </div>
                 </div>
@@ -73,9 +78,9 @@ export default function about() {
                     <div>
                     <img src={Blur3img} alt='' />
                     </div>
-                    <a href='#' className='uppercase tracking-wide text-sm
+                    <p className='uppercase tracking-wide text-sm
                      to-slate-300 font-semibold'>
-                     Frontend Development</a>
+                     Frontend Development</p>
                      <p className='mt-2 text-slate-400'>Transforming designs into dynamic, responsive websites with code & creativity.</p>
                     </div>
                 </div>

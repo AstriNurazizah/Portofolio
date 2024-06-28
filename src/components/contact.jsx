@@ -1,7 +1,7 @@
 import Blur4img from '../assets/blurb-004.png';
 import { TfiEmail } from "react-icons/tfi";
 import { CiLinkedin } from "react-icons/ci";
-import { FaDribbble } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 
 export default function Footer() {
     return (
@@ -36,7 +36,7 @@ export default function Footer() {
             <div className='relative rounded-xl overflow-auto p-8 hover:animate-pulse'>
                 <div className='flex items-center gap-3'>
                     <button className='flex justify-end items-center border border-black
-                     text-black px-40 py-3 mb-8'>Dribbble<FaDribbble /></button>
+                     text-black px-40 py-3 mb-8'>Github<FiGithub /></button>
                 </div>
             </div>
         </div>

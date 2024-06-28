@@ -49,9 +49,26 @@ function closeMenu(){
             {toggle ? (
                 <div className="flex justify-between ml-10">
                 <ul>
-                    <li className="text-xl mb-2 cursor-pointer hover:text-neutral-300">Project</li>
-                    <li className="text-xl mb-2 cursor-pointer hover:text-neutral-300">Play</li>
-                    <li className="text-xl mb-2 cursor-pointer hover:text-neutral-300">Blog</li>
+                    <li className="text-xl mb-2 cursor-pointer hover:text-neutral-300">
+                        <a href="#project">
+                        Portofolio
+                        </a>
+                    </li>
+                    <li className="text-xl mb-2 cursor-pointer hover:text-neutral-300">
+                        <a href="#about">
+                        About
+                        </a>
+                    </li>
+                    <li className="text-xl mb-2 cursor-pointer hover:text-neutral-300">
+                        <a href="#blog">
+                        Blog
+                        </a>    
+                    </li>
+                    <li className="text-xl mb-2 cursor-pointer hover:text-neutral-300">
+                        <a href="#con">
+                        Contact
+                        </a>
+                    </li>
                 </ul>
             </div>
             ): (
